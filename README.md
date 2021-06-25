@@ -5,10 +5,6 @@
 Welcome. This repository contains all files related to my Master Thesis.
 
 
-ABSTRACT: 
-
-
-
 FILES:
 
 DELIVERABLES
@@ -18,10 +14,10 @@ DATASET
 - The used dataset, HAM 10000, is publicly accessible: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T 
 
 NOTEBOOKS
-- Preprocessing #Run first
-- 16 Notebooks containing the one model each (8 multiclass, 8 binary) #Run after preprocessing
-- Evaluation #Run after model training creation
-- Output #Run after Evaluation
+- Preprocessing                                                        # Run first
+- 16 Notebooks containing the one model each (8 multiclass, 8 binary)  # Run after preprocessing
+- Evaluation                                                           # Run after model training creation
+- Output                                                               # Run after Evaluation
 
 PROCEDURE:
 - Change the data folders to your own at the beginning of each notebook. As long as the data is stored in the same way it was downloaded 
