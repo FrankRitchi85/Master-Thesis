@@ -2,50 +2,31 @@
 # Multimodal vs Multi-Model: A Comparative Analysis of Metadata Utilization in Skin Lesion Classification
 
 
-This repository contains all files related to my Master Thesis.
+Welcome. This repository contains all files related to my Master Thesis.
+
+
+ABSTRACT: 
+
 
 
 FILES:
 
 DELIVERABLES
-- Bachelor End Project - Thesis - Frank Ritchi.pdf
-- Bachelor End Project - Research Compendium - Frank Ritchi.pdf
-
-|R|-Code
-- Dataset.R
-- Elastic_Net_Procedure.R
+- Thesis in PDF format
 
 DATASET
-- Final_Dataset.csv
+- The used dataset, HAM 10000, is publicly accessible: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T 
 
-FIGURES AND TABLES
-- Figures and Tables.xlsx
-- RESID TEA HIGH.png
-- RESID EEA HIGH.png
-- RESID TEA LOW.png
-- RESID EEA LOW.png
-- RMSPE TEA HIGH.png
-- RMSPE EEA HIGH.png
-- RMSPE TEA LOW.png
-- RMSPE EEA LOW.png
+NOTEBOOKS
+- Preprocessing #Run first
+- 16 Notebooks containing the one model each (8 multiclass, 8 binary) #Run after preprocessing
+- Evaluation #Run after model training creation
+- Output #Run after Evaluation
 
-RAW DATA
-* GEM Adult Population Survey
-- 1425660576GEM_2011_APS_Global_National_Level_Data_1Feb2015.sav
-- 1422549452GEM_2012_APS_Global_National_Level_Data_1Feb2015.sav
-- 1422390399GEM_2013_APS_Global_National_Level_Data_1Feb2015.sav
-- GEM 2014 APS Global National Level Data_9Mar2016.sav
-- GEM 2015 APS Global National Level Data_6Dec2016.sav
-
-* GEM National Expert Survey
-- 2011 GEM NES AGGREGATED NATIONS.sav
-- 2012_GEM_NES_NATIONAL LEVEL_1.sav
-- GEM 2013 NES Global National Level Data rev14052014.sav
-- GEM 2014 NES NATIONAL LEVEL_HARMONIZED_2.sav
-- CORRECTED_GEM 2015 NES NATIONAL LEVEL.sav
-
-* Human Development Index
-- Human Development Index (HDI).csv
-
-* Global Competitiveness Index
-GCI_Dataset_2007-2017.xlsx
+PROCEDURE:
+- Change the data folders to your own at the beginning of each notebook. As long as the data is stored in the same way it was downloaded 
+- (images in 2 folders + a metadata .csv file), no further action is required.
+- The final dataset used in the classification models is stored as a pickle-file after running the preprocessing file. This file should be used as input for the models
+- After running the models, the trained models and relevant variables (e.g. y_tests and y_preds) are stored in pickles-files. These are used as input for the evaluation notebook.
+- The Evaluation notebook runs on the test sets and outputs pickle-files of the evaluated models, that are used as input for the Output notebook
+- The Output notebook creates the appropriate tables and plots.
