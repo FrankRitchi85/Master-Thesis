@@ -4,9 +4,6 @@
 
 Welcome. This repository contains all files related to my Master Thesis.
 
-
-FILES:
-
 DELIVERABLES
 - Thesis in PDF format
 
